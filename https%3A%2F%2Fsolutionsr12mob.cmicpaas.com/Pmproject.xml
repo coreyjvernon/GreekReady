@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Pmproject" path="/cmictest/pm-rest-api/rest/1/pmproject" id="c861061e-5928-476e-84ac-0823f3afd096" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c861061e-5928-476e-84ac-0823f3afd096fileName">Pmproject</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Pmproject" id="48eee375-f9b2-4f83-a0ee-6a9c57eeeb72" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>finder</con:name>
+        <con:value>selectByCompany;companyCode=10</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>selectByCompany;companyCode=10</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="FAULT">
+      <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:element>html</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="baa7d465-1f14-44c7-8d96-b85864b06a99" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://solutionsr12mob.cmicpaas.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="finder" value="selectByCompany;companyCode=10"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>finder</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

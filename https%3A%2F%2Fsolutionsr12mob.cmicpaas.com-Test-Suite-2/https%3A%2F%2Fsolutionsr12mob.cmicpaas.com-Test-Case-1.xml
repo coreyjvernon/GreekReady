@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="c9c97e85-08c9-4baa-9751-0f4d57babee3" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://solutionsr12mob.cmicpaas.com Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c9c97e85-08c9-4baa-9751-0f4d57babee3fileName">https%3A%2F%2Fsolutionsr12mob.cmicpaas.com-Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="80358dfb-263d-4cb7-8ff7-98d3ed979db9">
+    <con:settings/>
+    <con:config service="https://solutionsr12mob.cmicpaas.com" resourcePath="/cmictest/pm-rest-api/rest/1/pmrfi" methodName="Pmrfi" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="d77ae418-20e0-4a73-97e0-0bfc7c492b3a" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://solutionsr12mob.cmicpaas.com</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="0de4e958-a83b-4304-8171-9d71a817127e" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="b6df5eba-b844-41a2-a741-31f9a6fbb7ad" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="finder" value="selectProjRfi;compCode=10"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>finder</con:entry>
+          <con:entry/>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

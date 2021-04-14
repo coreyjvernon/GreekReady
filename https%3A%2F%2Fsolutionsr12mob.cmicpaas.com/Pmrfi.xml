@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Pmrfi" path="/cmictest/pm-rest-api/rest/1/pmrfi" id="00bfa75d-c938-49ca-95dc-1871d2a17467" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="00bfa75d-c938-49ca-95dc-1871d2a17467fileName">Pmrfi</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Pmrfi" id="2fac61a3-9ffd-45d8-bced-ebf3481fe2b3" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>finder</con:name>
+        <con:value>selectProjRfi;compCode=10</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>selectProjRfi;compCode=10</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="d77ae418-20e0-4a73-97e0-0bfc7c492b3a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://solutionsr12mob.cmicpaas.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="finder" value="selectProjRfi;compCode=10"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>finder</con:entry>
+        <con:entry/>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
