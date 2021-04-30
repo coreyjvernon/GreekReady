@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/subtract" path="/subtract" id="085a867a-517e-45b3-8d68-04edfecc1075" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="085a867a-517e-45b3-8d68-04edfecc1075fileName">%2Fsubtract</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="subtractInput" id="bfa20eef-b3dd-4dac-8c24-4859d8458854" method="POST">
+    <con:description>Subtract inputOne from inputTwo</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>inputOne</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>First input to resolve</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>inputTwo</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>First input to resolve</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "1234567890"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="e70ac59a-5fe4-4e0e-9806-720e1d25cf09" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="e4549caf-cd13-4718-8379-0240e61daeb2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="338b0ffe-987d-4d8d-a290-7b53c4eb6643">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="3db1684c-d5d7-4079-a0df-4f3a21c632af">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="e4549caf-cd13-4718-8379-0240e61daeb2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="338b0ffe-987d-4d8d-a290-7b53c4eb6643">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="3db1684c-d5d7-4079-a0df-4f3a21c632af">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="e4549caf-cd13-4718-8379-0240e61daeb2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="338b0ffe-987d-4d8d-a290-7b53c4eb6643">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="3db1684c-d5d7-4079-a0df-4f3a21c632af">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>
