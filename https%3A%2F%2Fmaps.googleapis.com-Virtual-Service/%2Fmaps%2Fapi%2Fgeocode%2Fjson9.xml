@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/maps/api/geocode/json" method="HEAD" resourcePath="/maps/api/geocode/json" id="4cfd0578-c34d-4f46-8005-8793b51228a9" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4cfd0578-c34d-4f46-8005-8793b51228a9fileName">%2Fmaps%2Fapi%2Fgeocode%2Fjson9</con:setting>
+  </con:settings>
+  <con:dispatchStyle>PARAMETER</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>address=Charlotte&amp;key=AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>key</con:parameterName>
+        <con:parameterValue>AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>address</con:parameterName>
+        <con:parameterValue>Charlotte</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For address=Charlotte&amp;key=AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw</con:responseName>
+    </con:ParameterDispatcherRule>
+  </con:parameterDispatcherRuleContainer>
+  <con:routeEnabled>true</con:routeEnabled>
+  <con:routeScript/>
+  <con:saveRoutedResponse>true</con:saveRoutedResponse>
+  <con:response name="For address=Charlotte&amp;key=AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw" id="a1728bef-c0ce-47da-a274-469abd5a8820" httpResponseStatus="200" mediaType="application/json" encoding="UTF-8">
+    <con:settings/>
+    <con:responseContent/>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>mafe</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Alt-Svc</con:name>
+      <con:value>h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Server-Timing</con:name>
+      <con:value>gfet4t7; dur=34</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Pragma</con:name>
+      <con:value>no-cache</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Thu, 06 May 2021 13:09:48 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Frame-Options</con:name>
+      <con:value>SAMEORIGIN</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Cache-Control</con:name>
+      <con:value>no-cache, must-revalidate</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Vary</con:name>
+      <con:value>Accept-Language</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Expires</con:name>
+      <con:value>Fri, 01 Jan 1990 00:00:00 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-XSS-Protection</con:name>
+      <con:value>0</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Goog-Maps-Metro-Area</con:name>
+      <con:value>Charlotte, NC</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>

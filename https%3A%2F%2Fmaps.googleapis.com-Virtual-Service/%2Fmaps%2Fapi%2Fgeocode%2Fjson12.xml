@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/maps/api/geocode/json" method="POST" resourcePath="/maps/api/geocode/json" id="bcefac81-1c31-4785-b924-eed40f68a35c" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bcefac81-1c31-4785-b924-eed40f68a35cfileName">%2Fmaps%2Fapi%2Fgeocode%2Fjson12</con:setting>
+  </con:settings>
+  <con:dispatchStyle>PARAMETER</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>address=Charlotte&amp;key=AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>key</con:parameterName>
+        <con:parameterValue>AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>address</con:parameterName>
+        <con:parameterValue>Charlotte</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For address=Charlotte&amp;key=AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw</con:responseName>
+    </con:ParameterDispatcherRule>
+  </con:parameterDispatcherRuleContainer>
+  <con:routeEnabled>true</con:routeEnabled>
+  <con:routeScript/>
+  <con:saveRoutedResponse>true</con:saveRoutedResponse>
+  <con:response name="For address=Charlotte&amp;key=AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw" id="d2254d31-c181-4e79-93e7-d894157eb96e" httpResponseStatus="200" mediaType="application/json" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+    <con:settings/>
+    <con:responseContent>{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Charlotte",
+               "short_name" : "Charlotte",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Charlotte",
+               "short_name" : "Charlotte",
+               "types" : [ "administrative_area_level_3", "political" ]
+            },
+            {
+               "long_name" : "Mecklenburg County",
+               "short_name" : "Mecklenburg County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "North Carolina",
+               "short_name" : "NC",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Charlotte, NC, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 35.39313300000001,
+                  "lng" : -80.67010399999999
+               },
+               "southwest" : {
+                  "lat" : 35.0131739,
+                  "lng" : -81.0095539
+               }
+            },
+            "location" : {
+               "lat" : 35.2270869,
+               "lng" : -80.8431267
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 35.39313300000001,
+                  "lng" : -80.67010399999999
+               },
+               "southwest" : {
+                  "lat" : 35.0131739,
+                  "lng" : -81.0095539
+               }
+            }
+         },
+         "place_id" : "ChIJgRo4_MQfVIgRZNFDv-ZQRog",
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>mafe</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Alt-Svc</con:name>
+      <con:value>h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Server-Timing</con:name>
+      <con:value>gfet4t7; dur=21</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Pragma</con:name>
+      <con:value>no-cache</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Thu, 06 May 2021 13:09:48 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Frame-Options</con:name>
+      <con:value>SAMEORIGIN</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Cache-Control</con:name>
+      <con:value>no-cache, must-revalidate</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Vary</con:name>
+      <con:value>Accept-Language</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Expires</con:name>
+      <con:value>Fri, 01 Jan 1990 00:00:00 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-XSS-Protection</con:name>
+      <con:value>0</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Goog-Maps-Metro-Area</con:name>
+      <con:value>Charlotte, NC</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>

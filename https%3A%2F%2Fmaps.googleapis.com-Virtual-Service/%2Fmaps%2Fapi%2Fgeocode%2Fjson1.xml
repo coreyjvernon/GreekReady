@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/maps/api/geocode/json" method="PURGE" resourcePath="/maps/api/geocode/json" id="c2fc0330-a337-4c7f-9eb9-e5dc33c8130a" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c2fc0330-a337-4c7f-9eb9-e5dc33c8130afileName">%2Fmaps%2Fapi%2Fgeocode%2Fjson1</con:setting>
+  </con:settings>
+  <con:dispatchStyle>PARAMETER</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>address=Charlotte&amp;key=AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>key</con:parameterName>
+        <con:parameterValue>AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>address</con:parameterName>
+        <con:parameterValue>Charlotte</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For address=Charlotte&amp;key=AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw</con:responseName>
+    </con:ParameterDispatcherRule>
+  </con:parameterDispatcherRuleContainer>
+  <con:routeEnabled>true</con:routeEnabled>
+  <con:routeScript/>
+  <con:saveRoutedResponse>true</con:saveRoutedResponse>
+  <con:response name="For address=Charlotte&amp;key=AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw" id="67759d73-43c0-48e8-a535-2b1516d1bb9c" httpResponseStatus="405" mediaType="text/html" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+    <con:settings/>
+    <con:responseContent><![CDATA[<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 405 (Method Not Allowed)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>405.</b> <ins>Thatâ€™s an error.</ins>
+  <p>The request method <code>PURGE</code> is inappropriate for the URL <code>/maps/api/geocode/json</code>.  <ins>Thatâ€™s all we know.</ins>]]></con:responseContent>
+    <con:header>
+      <con:name>Referrer-Policy</con:name>
+      <con:value>no-referrer</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Alt-Svc</con:name>
+      <con:value>h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Server-Timing</con:name>
+      <con:value>gfet4t7; dur=0</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Thu, 06 May 2021 13:09:46 GMT</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>
