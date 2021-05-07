@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/divide" path="/divide" id="7d53cd5e-65b9-4624-8213-29dad49fa126" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7d53cd5e-65b9-4624-8213-29dad49fa126fileName">%2Fdivide</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="divideInput" id="664cea86-fc9d-4daa-b678-0f31e5b42e04" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>inputOne</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>inputTwo</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="dff057e0-da2f-4e6b-8c4a-ecd9067efaee" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://http://18.224.146.21:8090/</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

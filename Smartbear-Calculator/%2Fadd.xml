@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/add" path="/add" id="c8c84a1e-d420-42ae-b9f9-0c996b025fb1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c8c84a1e-d420-42ae-b9f9-0c996b025fb1fileName">%2Fadd</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="addInput" id="907e170d-d613-4657-abcb-d3f20ad36d2e" method="POST">
+    <con:description>add two numbers together</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>inputOne</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description>First input to resolve</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>inputTwo</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description>First input to resolve</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "1234567890"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "message" : "Error in request"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="8ff70e07-9460-472e-a0e6-e95bb0883c0d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://http://18.224.146.21:8090/</con:endpoint>
+      <con:parameters>
+        <con:entry key="inputOne" value=""/>
+        <con:entry key="inputTwo" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

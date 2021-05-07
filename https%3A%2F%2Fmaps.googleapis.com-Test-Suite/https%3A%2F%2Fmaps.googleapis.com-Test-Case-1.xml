@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="bb7fb009-1287-47df-8f61-66bb600d8eb2" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://maps.googleapis.com Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="bb7fb009-1287-47df-8f61-66bb600d8eb2fileName">https%3A%2F%2Fmaps.googleapis.com-Test-Case-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="Data Source" id="221a5902-3f3a-4486-bca4-1aab46f227f9">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
+    </con:settings>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="JDBC">
+        <con:configuration>
+          <driver>org.postgresql.Driver</driver>
+          <connstr>jdbc:postgresql://127.0.0.1:5432/postgres?user=postgres&amp;password=PASS_VALUE</connstr>
+          <pass>Eagle$4133</pass>
+          <Connection/>
+          <query>Select "JDBC_Sample"."City" as JDBC_Sample_City
+From "JDBC_Sample"</query>
+          <fetchSize/>
+          <stored-procedure>false</stored-procedure>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>JDBC_Sample_City</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="Internal" id="945a4957-8611-45d3-ac72-1af7f3ca2d0b">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>1</generatorsTotalNumber>
+          <lastSelectedProperty>0</lastSelectedProperty>
+          <GeneratorType0>CITY</GeneratorType0>
+          <PropertyName0>City</PropertyName0>
+          <repetitionCountCity>0</repetitionCountCity>
+          <repeatValuesCity>false</repeatValuesCity>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>City</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1" id="cb461cd3-6555-4d54-abb5-8f84a4a1b74c">
+    <con:settings/>
+    <con:config service="https://maps.googleapis.com" resourcePath="/maps/api/geocode/{format}" methodName="Json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="19e8142e-eb82-4861-9b88-a39bc6e9b1d8" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://maps.googleapis.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="2b633e92-6a8f-44a2-9d6b-541fece7947b" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200, 201</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="address" value="${Data Source#JDBC_Sample_City}"/>
+          <con:entry key="key" value="AIzaSyCdjFI6DISXPmIzz4ol-P6VyUg9U8feZtw"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>address</con:entry>
+          <con:entry>key</con:entry>
+          <con:entry>format</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="999b882b-ee7b-4293-81db-a14d9b25dca5">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source</dataSourceStep>
+      <targetStep>Request 1</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>999b882b-ee7b-4293-81db-a14d9b25dca5</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>945a4957-8611-45d3-ac72-1af7f3ca2d0b</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

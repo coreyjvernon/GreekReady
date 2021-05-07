@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/subtract" path="/subtract" id="d08b0879-3245-4c33-8558-1e6c4efd4a73" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d08b0879-3245-4c33-8558-1e6c4efd4a73fileName">%2Fsubtract</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="subtractInput" id="1ca4d4c3-47e6-436c-b671-e9a2ccacbcb9" method="POST">
+    <con:description>Subtract inputOne from inputTwo</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>inputOne</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description>First input to resolve</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>inputTwo</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description>First input to resolve</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "1234567890"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="ef79af83-51e1-4d3a-a757-69d06f2ac1eb" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://http://18.224.146.21:8090/</con:endpoint>
+      <con:parameters>
+        <con:entry key="inputOne" value=""/>
+        <con:entry key="inputTwo" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>
