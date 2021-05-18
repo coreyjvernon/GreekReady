@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/inventory" path="/inventory" id="b24b3232-304a-4cf5-844d-b13a4774a97a" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b24b3232-304a-4cf5-844d-b13a4774a97afileName">%2Finventory</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="searchInventory" id="eb8d7377-2dba-4942-820a-27057cf42a7b" method="GET">
+    <con:description>By passing in the appropriate options, you can search for
+available inventory in the system</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>searchString</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description>pass an optional search string for looking up inventory</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>skip</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description>number of records to skip for pagination</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>limit</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description>maximum number of records to return</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>search results matching criteria</con:description>
+      <con:sampleContent>[ {
+  "id" : "d290f1ee-6c54-4b01-90e6-d701748f0851",
+  "name" : "Widget Adapter",
+  "releaseDate" : "2016-08-29T09:12:33.001Z",
+  "manufacturer" : {
+    "name" : "ACME Corporation",
+    "homePage" : "https://www.acme-corp.com",
+    "phone" : "408-867-5309"
+  }
+} ]</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="329b9172-a8de-4ff8-95bf-90b50e6852b9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://virtserver.swaggerhub.com/Corey_Projects/Beta2/2.0.0</con:endpoint>
+      <con:parameters>
+        <con:entry key="searchString" value=""/>
+        <con:entry key="limit" value=""/>
+        <con:entry key="skip" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="addInventory" id="d3200e81-1098-4e68-9448-7e468f1c9ac5" method="POST">
+    <con:description>Adds an item to the system</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : "d290f1ee-6c54-4b01-90e6-d701748f0851",
+  "name" : "Widget Adapter",
+  "releaseDate" : "2016-08-29T09:12:33.001Z",
+  "manufacturer" : {
+    "name" : "ACME Corporation",
+    "homePage" : "https://www.acme-corp.com",
+    "phone" : "408-867-5309"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="6bcb5a93-1303-40c1-8de4-54a230c4b2c4" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://virtserver.swaggerhub.com/Corey_Projects/Beta2/2.0.0</con:endpoint>
+      <con:request>{\r
+  "id" : "d290f1ee-6c54-4b01-90e6-d701748f0851",\r
+  "name" : "Widget Adapter",\r
+  "releaseDate" : "2016-08-29T09:12:33.001Z",\r
+  "manufacturer" : {\r
+    "name" : "ACME Corporation",\r
+    "homePage" : "https://www.acme-corp.com",\r
+    "phone" : "408-867-5309"\r
+  }\r
+}</con:request>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="Deletes an item from the system" id="f9c0d076-bb7a-4cf9-b576-5b508b957bed" method="DELETE">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>api_key</con:name>
+        <con:value/>
+        <con:style>HEADER</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="55c29ff1-c967-49ab-83db-872a9d371078" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://virtserver.swaggerhub.com/Corey_Projects/Beta2/2.0.0</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
