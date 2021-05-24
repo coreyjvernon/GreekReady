@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a704ffa7-4867-4dc9-b349-9c6634d29260" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="REST" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a704ffa7-4867-4dc9-b349-9c6634d29260fileName">REST</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Step Name" id="5533c56c-42d3-49f0-b3ac-1276a9e24b13">
+    <con:settings/>
+    <con:config service="SWAPI" resourcePath="/api/people/{peopleId}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Step Name" id="c41c2320-7550-406e-83ad-463e03bef254" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://swapi.co</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://swapi.co/api/people/cGVvcGxlOjE%3D/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="db527d43-a7d1-49bd-bfbc-d1f924c46548" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="bc8f1280-9e5c-4e5b-b89f-6a921039dd7c" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="peopleId" value="10"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="291056ca-f4ce-4dc8-af77-73ff7998ef0e">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="294112e7-6161-42da-bd9c-f050fdce6d39">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="1ae04e77-495c-4d53-92a4-9706e3aff8e7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="12e7d7ee-4dab-4fdd-ab7d-2dd6184cbbac">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c3a2baf5-bd64-4775-a560-9506e1bf43ec">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="7cfca2bf-3100-4d8a-84be-492895c7be8c">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="e5030045-70fa-4d54-a4b4-c5d843ac1c47">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="291056ca-f4ce-4dc8-af77-73ff7998ef0e">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="294112e7-6161-42da-bd9c-f050fdce6d39">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="1ae04e77-495c-4d53-92a4-9706e3aff8e7">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="12e7d7ee-4dab-4fdd-ab7d-2dd6184cbbac">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="c3a2baf5-bd64-4775-a560-9506e1bf43ec">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="7cfca2bf-3100-4d8a-84be-492895c7be8c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>
