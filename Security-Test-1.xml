@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:securityTest id="e94ebde0-9dc0-419a-a355-1b804eb7f89f" testCaseId="42c142ee-56e1-419c-8316-b43a73809b28" name="Security Test 1" failSecurityTestOnScanErrors="true" xmlns:con="http://eviware.com/soapui/config">
+<con:securityTest id="8fbc94fa-5e7f-4e0d-a69d-5345e8c1d833" testCaseId="42c142ee-56e1-419c-8316-b43a73809b28" name="Security Test 1" failSecurityTestOnScanErrors="true" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="e94ebde0-9dc0-419a-a355-1b804eb7f89ffileName">Security-Test-1</con:setting>
+    <con:setting id="8fbc94fa-5e7f-4e0d-a69d-5345e8c1d833fileName">Security-Test-1</con:setting>
   </con:settings>
   <con:testStepSecurityTest>
-    <con:testStepId>c1e363ed-7d01-4ead-a05b-d2c66d1cbf44</con:testStepId>
-    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="fa728d58-4275-4aa2-9acc-56ccbde48362" applyForFailedStep="false" disabled="false">
+    <con:testStepId>b7eefca1-1bf4-476a-b0b4-af99d30dac03</con:testStepId>
+    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="7ec4dc74-f7ed-4c05-b6e4-4bec8cfb3c2f" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:GroovySecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:executeScript/>
       </con:config>
-      <con:assertion type="Sensitive Information Exposure" id="db38aadf-e9b9-445f-a8b2-de47fe38f67b" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="3bb45c72-e8bf-490d-8828-435e540ac5a2" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -22,11 +22,11 @@
     </con:testStepSecurityScan>
   </con:testStepSecurityTest>
   <con:testStepSecurityTest>
-    <con:testStepId>82710e43-8108-477e-a3a9-6753207bacd1</con:testStepId>
-    <con:testStepSecurityScan type="BoundaryScan" name="Boundary Scan" id="613659f4-d766-4367-9500-62e321351cb9" applyForFailedStep="false" disabled="false">
+    <con:testStepId>e9ec2acb-a708-4c76-b732-5947f877b8f1</con:testStepId>
+    <con:testStepSecurityScan type="BoundaryScan" name="Boundary Scan" id="49f7fb15-63bd-4ae4-a851-2153284275cf" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-      <con:assertion type="Sensitive Information Exposure" id="fb1507c4-b191-40b9-9460-6c6ed9f0c8c7" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="f30bd6e8-3f36-40de-8f01-0020d0a86bbc" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -38,7 +38,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="CrossSiteScriptingScan" name="Cross Site Scripting" id="58aff0b0-493b-4e3c-8cb7-d5da376039f8" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="CrossSiteScriptingScan" name="Cross Site Scripting" id="5441206c-6db2-4459-983d-1978b5c7ac96" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:CrossSiteScriptingScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:parameterExposureStrings>&lt;PLAINTEXT></con:parameterExposureStrings>
@@ -134,10 +134,10 @@
         <con:parameterExposureStrings>&lt;SCRIPT a=">'>" SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings>
         <con:parameterExposureStrings>&lt;SCRIPT>document.write("&lt;SCRI");&lt;/SCRIPT>PT SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings>
       </con:config>
-      <con:assertion type="Sensitive Information Exposure" id="91c7fa89-7074-4de5-8ba4-02b30787d6ff" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="e76d5436-9d4a-41a8-add6-253849772ad6" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
-      <con:assertion type="CrosSiteScript" id="c6278258-f2d5-47fd-b594-a1ffc7079c72" name="Cross Site Scripting Detection">
+      <con:assertion type="CrosSiteScript" id="0abba5a7-e4ed-4796-b473-c1c35fea181c" name="Cross Site Scripting Detection">
         <con:configuration/>
       </con:assertion>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -149,14 +149,14 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="FuzzingScan" name="Fuzzing Scan" id="d7737932-7f13-4f07-ad80-b32f3e273612" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="FuzzingScan" name="Fuzzing Scan" id="e363e3c0-9dc3-4df8-9746-7d54895b9768" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:FuzzerScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:minimal>5</con:minimal>
         <con:maximal>15</con:maximal>
         <con:numberOfRequest>100</con:numberOfRequest>
       </con:config>
-      <con:assertion type="Sensitive Information Exposure" id="a92c011d-d0aa-4a64-8be5-1565d967e999" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="ba797847-b6b2-4067-9e2f-b95a2d7b5c73" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -168,7 +168,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="InvalidTypesSecurityScan" name="Invalid Types" id="87f4c422-572c-4785-ac89-79972fffbb41" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="InvalidTypesSecurityScan" name="Invalid Types" id="e5c77218-3c4d-48d8-ae7b-343c07278fa1" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:InvalidSecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:typesList>
@@ -273,7 +273,7 @@
           <con:value>SoapUI is the best</con:value>
         </con:typesList>
       </con:config>
-      <con:assertion type="Sensitive Information Exposure" id="bf95354c-f611-418d-bba5-8ebc5fa32c2f" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="e08b486b-954f-4062-ab15-cfc60db5537f" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -285,7 +285,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="SQLInjectionScan" name="SQL Injection" id="b6c8dc58-c80b-413e-a858-582a6fe0a8f2" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="SQLInjectionScan" name="SQL Injection" id="8b7439f3-5262-4b4f-92df-14e2fa6996d0" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:SQLInjectionScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:sqlInjectionStrings>'-'</con:sqlInjectionStrings>
@@ -1102,7 +1102,7 @@
         <con:sqlInjectionStrings>admin') or ('1'='1'/*</con:sqlInjectionStrings>
         <con:sqlInjectionStrings>UNION ALL SELECT 1,2,3,4,5,6</con:sqlInjectionStrings>
       </con:config>
-      <con:assertion type="Sensitive Information Exposure" id="0f54e3ec-1def-4314-8c75-f90457c4c42e" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="d7a6403d-a4ca-4615-9814-61e761ccba0b" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -1114,7 +1114,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="XPathInjectionSecurityScan" name="XPath Injection" id="573ec430-353f-4acf-b938-59254897a9a9" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="XPathInjectionSecurityScan" name="XPath Injection" id="65c49078-5013-4c3f-9db3-293776efdbac" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:XPathInjection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:xpathList>or name(//users/LoginID[1]) = 'LoginID' or 'a'='b</con:xpathList>
@@ -1128,7 +1128,7 @@
         <con:xpathList>test�%20UNION%20select%201,%20@@version,%201,%201;�</con:xpathList>
         <con:xpathList>test� UNION select 1, @@version, 1, 1;�</con:xpathList>
       </con:config>
-      <con:assertion type="Sensitive Information Exposure" id="8d1a1580-79ef-473f-96fa-d2ffc00214e9" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="15fec314-3ed7-4a75-b41f-57034284e793" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -1140,12 +1140,12 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="070a4f13-1189-46f3-b680-1ee7fadc981c" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="38518460-b492-4494-b994-647a82854264" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:GroovySecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:executeScript/>
       </con:config>
-      <con:assertion type="Sensitive Information Exposure" id="ca08848c-4175-464c-bd69-fc5d9cc3aed7" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="33196b86-9a1a-4a70-90f8-a3a90d66bfa0" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -1157,15 +1157,15 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityProScan type="HttpMethodFuzzingScan" name="HTTP Method Fuzzing" id="5b965726-97f7-4055-8885-0cc73155a8fe" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityProScan type="HttpMethodFuzzingScan" name="HTTP Method Fuzzing" id="e5bc1bbf-0db3-4494-b242-5dd8f278eb31" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:HttpMethodFuzzingScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:deselectedMethods/>
       </con:config>
-      <con:assertion type="Sensitive Information Exposure" id="e7ea2a00-7c69-447c-96d4-f7fafc3b56f3" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="9c45347a-2303-45b7-8a91-719df646cb4d" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
-      <con:assertion type="Valid HTTP Status Codes" id="9bcc861f-6e36-43cb-9c06-d2b85e7e6235" name="Valid HTTP Status Codes">
+      <con:assertion type="Valid HTTP Status Codes" id="e94da870-2ab8-4abf-880d-728c6a02dadd" name="Valid HTTP Status Codes">
         <con:settings>
           <con:setting id="__LEVEL_">WARNING</con:setting>
         </con:settings>
@@ -1180,7 +1180,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityProScan>
-    <con:testStepSecurityProScan type="SensitiveFileSecurityScan" name="Sensitive Files Exposure" id="e49e167c-b95b-42b9-b00e-48b97077add5" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityProScan type="SensitiveFileSecurityScan" name="Sensitive Files Exposure" id="8768a84d-1b64-450f-b9d6-4c4d45071e0b" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:SensitiveFileSecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:sensitiveFile description="Sensitive SSH information" fileName="/.ssh/known_hosts"/>
@@ -1233,7 +1233,7 @@
         <con:sensitiveFile description="May exist if Ruby on Rails is used on the server" fileName="/db/seeds.rb"/>
         <con:sensitiveFile description="May exist if Ruby on Rails is used on the server" fileName="/db/development.sqlite3"/>
       </con:config>
-      <con:assertion type="Sensitive Files Exposure Assertion" id="167edfde-336f-4018-80b9-b397e7db724e" name="Sensitive Files Exposure"/>
+      <con:assertion type="Sensitive Files Exposure Assertion" id="ba3e6678-0b52-4f74-9d13-f627cda74652" name="Sensitive Files Exposure"/>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
       <con:checkedParameters xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
       <con:executionStrategy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -1241,13 +1241,13 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityProScan>
-    <con:testStepSecurityProScan type="WeakAuthenticationScan" name="Weak Authentication" id="136c4b10-b8a3-4f5e-b025-b01c8140a784" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityProScan type="WeakAuthenticationScan" name="Weak Authentication" id="1b17a63b-0ba8-448d-82a3-c3f6716bd05c" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-      <con:assertion type="WeakPassword" id="6e3fdd50-5bcb-4cc2-96d4-ac65d9563294" name="Weak Password Detection">
+      <con:assertion type="WeakPassword" id="47743827-dc53-4a28-93aa-e85b39524cb8" name="Weak Password Detection">
         <con:configuration/>
       </con:assertion>
-      <con:assertion type="BasicAuth" id="f7ae3d81-3975-407c-9439-f97b2ae82d67" name="Basic Authentication Detection"/>
+      <con:assertion type="BasicAuth" id="7e9bdddc-605f-4da9-9ff7-29ff6567cef8" name="Basic Authentication Detection"/>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
       <con:checkedParameters xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
       <con:executionStrategy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -1257,13 +1257,13 @@
     </con:testStepSecurityProScan>
   </con:testStepSecurityTest>
   <con:testStepSecurityTest>
-    <con:testStepId>83afb1ef-0160-48b2-a455-71a87ca3550c</con:testStepId>
-    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="85cd5024-22b3-4dc9-af5e-156974a5c565" applyForFailedStep="false" disabled="false">
+    <con:testStepId>49a48942-5480-4f05-b041-2b26843786b4</con:testStepId>
+    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="0a9d6eef-ce5d-4793-ad4e-ea35fa23cb2b" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:GroovySecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:executeScript/>
       </con:config>
-      <con:assertion type="Sensitive Information Exposure" id="45ea863d-c3f0-4910-957d-94ea6ff1ef40" name="Sensitive Information Exposure">
+      <con:assertion type="Sensitive Information Exposure" id="f6312f54-85a6-4fbc-b0f0-a98acd9f411b" name="Sensitive Information Exposure">
         <con:configuration/>
       </con:assertion>
       <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>

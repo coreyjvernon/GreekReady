@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="c21497a0-7078-4fdc-b6b1-f236f7c45552" created="3.7.0" activeEnvironment="Default environment" name="GMQENV" resourceRoot="" updated="3.8.0" encryptionMode="Not encrypted" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="c21497a0-7078-4fdc-b6b1-f236f7c45552" created="3.7.0" activeEnvironment="VIRT" name="Magic" resourceRoot="" updated="3.8.0" encryptionMode="Not encrypted" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c21497a0-7078-4fdc-b6b1-f236f7c45552fileName">KafkaProject-readyapi-project</con:setting>
     <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -100,7 +100,7 @@ document.getElementById("btnSubmit").click();</con:entry>
   </con:eventHandlers>
   <con:environment id="294112e7-6161-42da-bd9c-f050fdce6d39" name="Dev" index="0">
     <con:service type="REST" name="SWAPI">
-      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http:/localhost:8071</con:endpoint>
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http://localhost:8088</con:endpoint>
     </con:service>
     <con:property>
       <con:name>name</con:name>
@@ -115,7 +115,7 @@ document.getElementById("btnSubmit").click();</con:entry>
   </con:environment>
   <con:environment id="1ae04e77-495c-4d53-92a4-9706e3aff8e7" name="QA" index="1">
     <con:service type="REST" name="SWAPI">
-      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http://localhost:8072</con:endpoint>
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http://localhost:8087</con:endpoint>
     </con:service>
     <con:property>
       <con:name>name</con:name>
@@ -129,9 +129,6 @@ document.getElementById("btnSubmit").click();</con:entry>
     <con:jmsConnectionContainer/>
   </con:environment>
   <con:environment id="12e7d7ee-4dab-4fdd-ab7d-2dd6184cbbac" name="PROD" index="2">
-    <con:service type="REST" name="SWAPI">
-      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http://api.swaggerhub.com</con:endpoint>
-    </con:service>
     <con:property>
       <con:name>name</con:name>
       <con:value/>
@@ -144,7 +141,7 @@ document.getElementById("btnSubmit").click();</con:entry>
     <con:jmsConnectionContainer/>
   </con:environment>
   <con:environment id="c3a2baf5-bd64-4775-a560-9506e1bf43ec" name="VIRT" index="3">
-    <con:service type="REST" name="GMQ2 API">
+    <con:service type="REST" name="Magic API">
       <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http://localhost:8017</con:endpoint>
     </con:service>
     <con:property>

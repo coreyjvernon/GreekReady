@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockService port="8017" path="/" host="localhost" name="Gartner API Virtual Service 2" id="5e3db7fa-48df-49b8-b336-8df2b1a015df" xmlns:con="http://eviware.com/soapui/config">
+<con:restMockService port="8017" path="/" host="localhost" name="Magic Virtual Service" id="5e3db7fa-48df-49b8-b336-8df2b1a015df" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="5e3db7fa-48df-49b8-b336-8df2b1a015dffileName">Gartner-API-Virtual-Service-2</con:setting>
+    <con:setting id="5e3db7fa-48df-49b8-b336-8df2b1a015dffileName">Magic-Virtual-Service</con:setting>
   </con:settings>
   <con:properties/>
   <con:constraints>

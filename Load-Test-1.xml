@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:loadUiTest name="Load Test 1" id="9ea539b1-3a30-4452-bbd0-cdc62b2a735a" xmlns:con="http://eviware.com/soapui/config">
+<con:loadUiTest name="Load Test 1" id="c1594335-f421-4f59-8eab-c6505271319c" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="soapUIObjectSourceId">42c142ee-56e1-419c-8316-b43a73809b28</con:setting>
     <con:setting id="soapUIObjectSourceType">soapUIObjectSourceType_RestRequest</con:setting>
-    <con:setting id="9ea539b1-3a30-4452-bbd0-cdc62b2a735afileName">Load-Test-1</con:setting>
+    <con:setting id="c1594335-f421-4f59-8eab-c6505271319cfileName">Load-Test-1</con:setting>
   </con:settings>
-  <con1:loadui-project id="33dea49c-b3ee-493f-acaf-0d91c8ea5cd8" label="Load Test 1" xmlns:con1="http://eviware.com/loadui/config">
+  <con1:loadui-project id="05699d8d-3868-4ade-abb2-a1ba08737cda" label="Load Test 1" xmlns:con1="http://eviware.com/loadui/config">
     <con1:properties>
       <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
       <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
@@ -16,25 +16,13 @@
       <con1:property propagates="true" key="ModelItem.rate" type="java.lang.Long">10</con1:property>
       <con1:property propagates="true" key="ModelItem.loadDistributionType" type="com.smartbear.load.facade.LoadDistributionType">Relative</con1:property>
       <con1:property propagates="true" key="ModelItem.remoteMode" type="java.lang.String"/>
-      <con1:property propagates="true" key="ModelItem.id" type="java.lang.String">9ea539b1-3a30-4452-bbd0-cdc62b2a735a</con1:property>
+      <con1:property propagates="true" key="ModelItem.id" type="java.lang.String">c1594335-f421-4f59-8eab-c6505271319c</con1:property>
     </con1:properties>
     <con1:attributes>
       <con1:property key="limits">Time=600;</con1:property>
     </con1:attributes>
     <con1:addons>
-      <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="dbe34b61-facb-4ce3-873e-089d1ba9c72b">
-        <con1:attributes>
-          <con1:property key="parentId">33dea49c-b3ee-493f-acaf-0d91c8ea5cd8</con1:property>
-          <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkMzNkZWE0OWMtYjNlZS00OTNmLWFjYWYtMGQ5MWM4ZWE1Y2Q4dAAEbWFpbnQABk1FRElBTnQAClRpbWUgVGFrZW4=</con1:property>
-          <con1:property key="Labeled@label">Time Taken - median</con1:property>
-          <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cEBZAAAAAAAAAAAAAAAAAAA=</con1:property>
-          <con1:property key="tolerancePeriod">0</con1:property>
-          <con1:property key="toleranceAllowedOccurrences">0</con1:property>
-          <con1:property key="stopTestOnFailure">false</con1:property>
-        </con1:attributes>
-        <con1:addons/>
-      </con1:addon>
-      <con1:addon type="com.eviware.loadui.pro.api.monitoring.ServerAddon" id="50bb0eaf-8219-4823-9301-71b3656072e8">
+      <con1:addon type="com.eviware.loadui.pro.api.monitoring.ServerAddon" id="0d38e9a5-aae8-4383-aa57-41bca9f61645">
         <con1:properties>
           <con1:property propagates="false" key="ServerItem.host" type="java.lang.String">PC15MYFV</con1:property>
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
@@ -43,7 +31,7 @@
           <con1:property key="label">My server</con1:property>
         </con1:attributes>
         <con1:addons>
-          <con1:addon type="monitor" id="ce446079-4d4b-4b3f-8056-6def29bd0c0c">
+          <con1:addon type="monitor" id="9046998c-540a-44fb-a44c-d11e0cd49543">
             <con1:properties>
               <con1:property propagates="true" key="_storedProperties[typeperf]" type="java.lang.String">575:9:Processor525:14:Interrupts/sec16:java.lang.Double11:% User Time16:java.lang.Double11:% Idle Time16:java.lang.Double8:DPC Rate16:java.lang.Double9:% C2 Time16:java.lang.Double18:C2 Transitions/sec16:java.lang.Double16:% Interrupt Time16:java.lang.Double16:% Processor Time16:java.lang.Double15:DPCs Queued/sec16:java.lang.Double18:C1 Transitions/sec16:java.lang.Double9:% C1 Time16:java.lang.Double17:% Privileged Time16:java.lang.Double10:% DPC Time16:java.lang.Double18:C3 Transitions/sec16:java.lang.Double9:% C3 Time16:java.lang.Double32:1:01:11:21:31:41:51:61:76:_Total976:11:LogicalDisk925:19:Disk Read Bytes/sec16:java.lang.Double28:Avg. Disk Write Queue Length16:java.lang.Double20:Disk Write Bytes/sec16:java.lang.Double25:Current Disk Queue Length16:java.lang.Double19:Avg. Disk sec/Write16:java.lang.Double11:% Idle Time16:java.lang.Double22:Avg. Disk Queue Length16:java.lang.Double16:% Disk Read Time16:java.lang.Double11:% Disk Time16:java.lang.Double24:Avg. Disk Bytes/Transfer16:java.lang.Double17:% Disk Write Time16:java.lang.Double14:Free Megabytes16:java.lang.Double12:Split IO/Sec16:java.lang.Double15:Disk Writes/sec16:java.lang.Double18:Avg. Disk sec/Read16:java.lang.Double14:Disk Bytes/sec16:java.lang.Double12:% Free Space16:java.lang.Double14:Disk Reads/sec16:java.lang.Double18:Disk Transfers/sec16:java.lang.Double21:Avg. Disk Bytes/Write16:java.lang.Double27:Avg. Disk Read Queue Length16:java.lang.Double22:Avg. Disk sec/Transfer16:java.lang.Double20:Avg. Disk Bytes/Read16:java.lang.Double30:2:C:15:HarddiskVolume46:_Total1564:6:Memory1543:24:Modified Page List Bytes16:java.lang.Double15:Pages Input/sec16:java.lang.Double16:Pages Output/sec16:java.lang.Double35:Standby Cache Normal Priority Bytes16:java.lang.Double15:Page Writes/sec16:java.lang.Double16:Available KBytes16:java.lang.Double19:Pool Nonpaged Bytes16:java.lang.Double25:Pool Paged Resident Bytes16:java.lang.Double15:Committed Bytes16:java.lang.Double16:Write Copies/sec16:java.lang.Double16:Available MBytes16:java.lang.Double21:Transition Faults/sec16:java.lang.Double16:Cache Faults/sec16:java.lang.Double24:% Committed Bytes In Use16:java.lang.Double17:Pool Paged Allocs16:java.lang.Double23:System Code Total Bytes16:java.lang.Double27:System Cache Resident Bytes16:java.lang.Double25:System Driver Total Bytes16:java.lang.Double11:Cache Bytes16:java.lang.Double44:Long-Term Average Standby Cache Lifetime (s)16:java.lang.Double24:Standby Cache Core Bytes16:java.lang.Double30:Free System Page Table Entries16:java.lang.Double15:Available Bytes16:java.lang.Double12:Commit Limit16:java.lang.Double14:Page Reads/sec16:java.lang.Double15:Page Faults/sec16:java.lang.Double26:System Code Resident Bytes16:java.lang.Double16:Pool Paged Bytes16:java.lang.Double28:System Driver Resident Bytes16:java.lang.Double22:Demand Zero Faults/sec16:java.lang.Double20:Pool Nonpaged Allocs16:java.lang.Double27:Standby Cache Reserve Bytes16:java.lang.Double16:Cache Bytes Peak16:java.lang.Double9:Pages/sec16:java.lang.Double31:Transition Pages RePurposed/sec16:java.lang.Double27:Free &amp; Zero Page List Bytes16:java.lang.Double6:4:main891:12:PhysicalDisk855:19:Disk Read Bytes/sec16:java.lang.Double28:Avg. Disk Write Queue Length16:java.lang.Double20:Disk Write Bytes/sec16:java.lang.Double25:Current Disk Queue Length16:java.lang.Double19:Avg. Disk sec/Write16:java.lang.Double11:% Idle Time16:java.lang.Double22:Avg. Disk Queue Length16:java.lang.Double16:% Disk Read Time16:java.lang.Double11:% Disk Time16:java.lang.Double24:Avg. Disk Bytes/Transfer16:java.lang.Double17:% Disk Write Time16:java.lang.Double12:Split IO/Sec16:java.lang.Double15:Disk Writes/sec16:java.lang.Double18:Avg. Disk sec/Read16:java.lang.Double14:Disk Bytes/sec16:java.lang.Double14:Disk Reads/sec16:java.lang.Double18:Disk Transfers/sec16:java.lang.Double21:Avg. Disk Bytes/Write16:java.lang.Double27:Avg. Disk Read Queue Length16:java.lang.Double22:Avg. Disk sec/Transfer16:java.lang.Double20:Avg. Disk Bytes/Read16:java.lang.Double14:4:0 C:6:_Total1081:17:Network Interface973:24:Packets Received Unknown16:java.lang.Double22:TCP RSC Exceptions/sec16:java.lang.Double27:TCP RSC Average Packet Size16:java.lang.Double20:Packets Received/sec16:java.lang.Double32:Packets Received Non-Unicast/sec16:java.lang.Double26:TCP Active RSC Connections16:java.lang.Double16:Packets Sent/sec16:java.lang.Double23:Packets Outbound Errors16:java.lang.Double23:Packets Received Errors16:java.lang.Double14:Bytes Sent/sec16:java.lang.Double19:Output Queue Length16:java.lang.Double26:Packets Received Discarded16:java.lang.Double24:Packets Sent Unicast/sec16:java.lang.Double29:TCP RSC Coalesced Packets/sec16:java.lang.Double15:Bytes Total/sec16:java.lang.Double26:Packets Outbound Discarded16:java.lang.Double21:Offloaded Connections16:java.lang.Double28:Packets Received Unicast/sec16:java.lang.Double28:Packets Sent Non-Unicast/sec16:java.lang.Double11:Packets/sec16:java.lang.Double18:Bytes Received/sec16:java.lang.Double17:Current Bandwidth16:java.lang.Double81:40:Intel[R] Ethernet Connection [4] I219-LM35:Intel[R] Dual Band Wireless-AC 8265731:6:System711:20:Context Switches/sec16:java.lang.Double14:System Up Time16:java.lang.Double27:File Control Operations/sec16:java.lang.Double22:Processor Queue Length16:java.lang.Double9:Processes16:java.lang.Double19:File Read Bytes/sec16:java.lang.Double24:File Data Operations/sec16:java.lang.Double7:Threads16:java.lang.Double23:% Registry Quota In Use16:java.lang.Double24:Exception Dispatches/sec16:java.lang.Double24:File Read Operations/sec16:java.lang.Double25:File Write Operations/sec16:java.lang.Double20:File Write Bytes/sec16:java.lang.Double20:Alignment Fixups/sec16:java.lang.Double22:File Control Bytes/sec16:java.lang.Double16:System Calls/sec16:java.lang.Double23:Floating Emulations/sec16:java.lang.Double6:4:main112:11:Paging File62:12:% Usage Peak16:java.lang.Double7:% Usage16:java.lang.Double30:19:\??\C:\pagefile.sys6:_Total</con1:property>
               <con1:property propagates="true" key="monitorName" type="java.lang.String">My monitor</con1:property>
@@ -56,7 +44,7 @@
         </con1:addons>
       </con1:addon>
     </con1:addons>
-    <con1:scene label="New Scenario" id="b596b607-f7df-4f0b-abdc-2cc5d3db2b8b">
+    <con1:scene label="New Scenario" id="ce6653a9-4b7b-424e-b2af-416b826b99fc">
       <con1:properties>
         <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
         <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
@@ -69,12 +57,12 @@
         <con1:property key="limits">Time=600;</con1:property>
       </con1:attributes>
       <con1:addons/>
-      <con1:component type="com.eviware.loadui.impl.component.IntervalComponent" label="Interval 1" id="15d8cc26-25f5-4dde-b818-5af4f838af4a" category="Scheduler">
+      <con1:component type="com.eviware.loadui.impl.component.IntervalComponent" label="Interval 1" id="8bca0f4c-069d-455e-b92a-1e2aeec56069" category="Scheduler">
         <con1:properties>
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
           <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con1:property>
           <con1:property propagates="true" key="startAt" type="java.lang.Long">0</con1:property>
-          <con1:property propagates="true" key="duration" type="java.lang.Long">433</con1:property>
+          <con1:property propagates="true" key="duration" type="java.lang.Long">296</con1:property>
           <con1:property propagates="true" key="unit" type="java.lang.String">Sec</con1:property>
           <con1:property propagates="true" key="mode" type="java.lang.String">Single</con1:property>
           <con1:property propagates="true" key="defaultMode" type="java.lang.Boolean">false</con1:property>
@@ -84,7 +72,7 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="SwaggerSuite:Test Case 1" id="30b1bc07-c16d-4b77-9e55-1b15b0953b9b" category="Runners">
+      <con1:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="MagicSuite:Test Case 1" id="32585e5a-f8fa-42a9-814f-915d51090a4a" category="Runners">
         <con1:properties>
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
           <con1:property propagates="true" key="concurrentSamples" type="java.lang.Long">100000000</con1:property>
@@ -106,7 +94,7 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:component type="com.eviware.loadui.impl.component.generators.FixedVU" label="Fixed Load 2" id="be28b462-1ff3-46eb-8efb-8a6ca04e1909" category="Generators">
+      <con1:component type="com.eviware.loadui.impl.component.generators.FixedVU" label="Fixed Load 2" id="393c62f8-e2d6-4e34-bd3e-d64af77ce771" category="Generators">
         <con1:properties>
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
           <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con1:property>
@@ -119,11 +107,11 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:connection outputTerminalId="15d8cc26-25f5-4dde-b818-5af4f838af4a/outgoingTerminal" inputTerminalId="be28b462-1ff3-46eb-8efb-8a6ca04e1909/stateTerminal"/>
-      <con1:connection outputTerminalId="be28b462-1ff3-46eb-8efb-8a6ca04e1909/triggerTerminal" inputTerminalId="30b1bc07-c16d-4b77-9e55-1b15b0953b9b/triggerTerminal"/>
-      <con1:connection outputTerminalId="30b1bc07-c16d-4b77-9e55-1b15b0953b9b/runningTerminal" inputTerminalId="be28b462-1ff3-46eb-8efb-8a6ca04e1909/Sample Count"/>
+      <con1:connection outputTerminalId="8bca0f4c-069d-455e-b92a-1e2aeec56069/outgoingTerminal" inputTerminalId="393c62f8-e2d6-4e34-bd3e-d64af77ce771/stateTerminal"/>
+      <con1:connection outputTerminalId="393c62f8-e2d6-4e34-bd3e-d64af77ce771/triggerTerminal" inputTerminalId="32585e5a-f8fa-42a9-814f-915d51090a4a/triggerTerminal"/>
+      <con1:connection outputTerminalId="32585e5a-f8fa-42a9-814f-915d51090a4a/runningTerminal" inputTerminalId="393c62f8-e2d6-4e34-bd3e-d64af77ce771/Sample Count"/>
     </con1:scene>
-    <con1:scene label="New Scenario 1" id="d4870acc-bd72-42fd-8288-cf62d1912186">
+    <con1:scene label="New Scenario 1" id="4d61f730-3420-4c6c-accc-c1a369c9fada">
       <con1:properties>
         <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
         <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
@@ -136,12 +124,12 @@
         <con1:property key="limits">Time=600;</con1:property>
       </con1:attributes>
       <con1:addons/>
-      <con1:component type="com.eviware.loadui.impl.component.IntervalComponent" label="Interval 2" id="b5979c6b-86b1-4bea-9c3e-802a55450ed0" category="Scheduler">
+      <con1:component type="com.eviware.loadui.impl.component.IntervalComponent" label="Interval 2" id="1fe5b52c-e08a-42ba-b935-c3dbaa2b57e8" category="Scheduler">
         <con1:properties>
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
           <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con1:property>
-          <con1:property propagates="true" key="startAt" type="java.lang.Long">129</con1:property>
-          <con1:property propagates="true" key="duration" type="java.lang.Long">471</con1:property>
+          <con1:property propagates="true" key="startAt" type="java.lang.Long">0</con1:property>
+          <con1:property propagates="true" key="duration" type="java.lang.Long">411</con1:property>
           <con1:property propagates="true" key="unit" type="java.lang.String">Sec</con1:property>
           <con1:property propagates="true" key="mode" type="java.lang.String">Single</con1:property>
           <con1:property propagates="true" key="defaultMode" type="java.lang.Boolean">false</con1:property>
@@ -151,7 +139,7 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:component type="com.eviware.loadui.impl.component.generators.FixedVU" label="Fixed Load 1" id="8e218a48-9969-4f98-a22d-bdf1f8854390" category="Generators">
+      <con1:component type="com.eviware.loadui.impl.component.generators.FixedVU" label="Fixed Load 1" id="e7d6bfe4-70ce-4dd2-81f4-8901b0637862" category="Generators">
         <con1:properties>
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
           <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con1:property>
@@ -164,7 +152,7 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="SwaggerSuite:Test Case 1" id="eb26b25c-2406-4073-b96c-24becf86af06" category="Runners">
+      <con1:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="MagicSuite:Test Case 1" id="ea0721d2-5cea-4374-84e4-6123ea093bc6" category="Runners">
         <con1:properties>
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
           <con1:property propagates="true" key="concurrentSamples" type="java.lang.Long">100000000</con1:property>
@@ -186,26 +174,36 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:connection outputTerminalId="b5979c6b-86b1-4bea-9c3e-802a55450ed0/outgoingTerminal" inputTerminalId="8e218a48-9969-4f98-a22d-bdf1f8854390/stateTerminal"/>
-      <con1:connection outputTerminalId="8e218a48-9969-4f98-a22d-bdf1f8854390/triggerTerminal" inputTerminalId="eb26b25c-2406-4073-b96c-24becf86af06/triggerTerminal"/>
-      <con1:connection outputTerminalId="eb26b25c-2406-4073-b96c-24becf86af06/runningTerminal" inputTerminalId="8e218a48-9969-4f98-a22d-bdf1f8854390/Sample Count"/>
+      <con1:connection outputTerminalId="1fe5b52c-e08a-42ba-b935-c3dbaa2b57e8/outgoingTerminal" inputTerminalId="e7d6bfe4-70ce-4dd2-81f4-8901b0637862/stateTerminal"/>
+      <con1:connection outputTerminalId="e7d6bfe4-70ce-4dd2-81f4-8901b0637862/triggerTerminal" inputTerminalId="ea0721d2-5cea-4374-84e4-6123ea093bc6/triggerTerminal"/>
+      <con1:connection outputTerminalId="ea0721d2-5cea-4374-84e4-6123ea093bc6/runningTerminal" inputTerminalId="e7d6bfe4-70ce-4dd2-81f4-8901b0637862/Sample Count"/>
     </con1:scene>
-    <con1:sceneAssignment sceneRef="b596b607-f7df-4f0b-abdc-2cc5d3db2b8b" agentRef="6a7ca184-9f07-4ee7-b686-a406787400fa" agentLabel="PC15MYFV" agentAddress="http://172.20.192.1:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="ce6653a9-4b7b-424e-b2af-416b826b99fc" agentRef="62eb8293-cded-475d-be33-2fa69c1a8a8a" agentLabel="PC15MYFV" agentAddress="http://172.23.208.1:1991/" enabled="true"/>
     <con1:statistics>
       <con1:page title="DefaultLoadUIStatisticPage">
         <con1:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="" groupType="Monitors">
-          <con1:chart statisticHolder="ce446079-4d4b-4b3f-8056-6def29bd0c0c">
+          <con1:chart statisticHolder="9046998c-540a-44fb-a44c-d11e0cd49543">
             <con1:attributes>
-              <con1:property key="_CHART_segments">77:36:ce446079-4d4b-4b3f-8056-6def29bd0c0c9:Processor16:% Processor Time6:_Total72:36:ce446079-4d4b-4b3f-8056-6def29bd0c0c6:Memory16:Available MBytes4:main</con1:property>
+              <con1:property key="_CHART_segments">72:36:9046998c-540a-44fb-a44c-d11e0cd495436:Memory16:Available MBytes4:main77:36:9046998c-540a-44fb-a44c-d11e0cd495439:Processor16:% Processor Time6:_Total</con1:property>
             </con1:attributes>
           </con1:chart>
           <con1:attributes>
-            <con1:property key="GroupId">c4dcb66e-4333-4b25-a51b-3d61384c0efb</con1:property>
+            <con1:property key="GroupId">e5a9f91c-b950-4711-8d80-603a70747c69</con1:property>
+          </con1:attributes>
+        </con1:chartGroup>
+        <con1:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="New Statistics Group" groupType="Graph">
+          <con1:chart statisticHolder="05699d8d-3868-4ade-abb2-a1ba08737cda">
+            <con1:attributes>
+              <con1:property key="_CHART_segments">68:36:05699d8d-3868-4ade-abb2-a1ba08737cda8:Failures10:PER_SECOND4:main75:36:05699d8d-3868-4ade-abb2-a1ba08737cda14:Test case runs10:PER_SECOND4:main</con1:property>
+            </con1:attributes>
+          </con1:chart>
+          <con1:attributes>
+            <con1:property key="GroupId">aac709e3-8c76-4afb-81d0-20f14cf3ba4b</con1:property>
           </con1:attributes>
         </con1:chartGroup>
       </con1:page>
     </con1:statistics>
-    <con1:agent url="http://172.20.192.1:1991/" label="PC15MYFV" id="6a7ca184-9f07-4ee7-b686-a406787400fa">
+    <con1:agent url="http://172.23.208.1:1991/" label="PC15MYFV" id="62eb8293-cded-475d-be33-2fa69c1a8a8a">
       <con1:properties>
         <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
         <con1:property propagates="true" key="AgentItem.maxThreads" type="java.lang.Long">1000</con1:property>
@@ -215,14 +213,15 @@
     </con1:agent>
     <con1:heatUpTime>15</con1:heatUpTime>
   </con1:loadui-project>
-  <con:loadUITestScenario projectId="33dea49c-b3ee-493f-acaf-0d91c8ea5cd8" scenarioId="b596b607-f7df-4f0b-abdc-2cc5d3db2b8b" name="New Scenario" id="9fcbeb04-06a4-44f9-92cb-9283262ba558">
+  <con:loadUITestScenario projectId="05699d8d-3868-4ade-abb2-a1ba08737cda" scenarioId="ce6653a9-4b7b-424e-b2af-416b826b99fc" name="New Scenario" id="16842b00-6587-4fca-8d40-d687cfcd6a36">
     <con:settings/>
   </con:loadUITestScenario>
-  <con:loadUITestScenario projectId="33dea49c-b3ee-493f-acaf-0d91c8ea5cd8" scenarioId="d4870acc-bd72-42fd-8288-cf62d1912186" name="New Scenario 1" id="1133b93d-a9d0-4b5b-8780-97a6bd361856">
+  <con:loadUITestScenario projectId="05699d8d-3868-4ade-abb2-a1ba08737cda" scenarioId="4d61f730-3420-4c6c-accc-c1a369c9fada" name="New Scenario 1" id="1100a938-13af-4e6d-9c08-1c6e2a49b2f8">
     <con:settings/>
   </con:loadUITestScenario>
-  <con:loadUIPanelData id="253eff3a-d70b-47b8-a015-dbb512a1aaf8">
+  <con:loadUIPanelData id="55b2e5f4-c396-46c3-9999-13568f2a19a3">
     <con:panel>Log</con:panel>
   </con:loadUIPanelData>
+  <con:statistics id="aac709e3-8c76-4afb-81d0-20f14cf3ba4b"/>
   <con:reportParameters/>
 </con:loadUiTest>

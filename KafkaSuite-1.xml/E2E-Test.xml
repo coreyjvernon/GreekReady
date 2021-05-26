@@ -14,13 +14,7 @@
         <con:schemaRegistry/>
         <con:messageType>JSON</con:messageType>
         <con:message>${REST Request#HarResponse#$['content']['text']}</con:message>
-        <con:parameters>
-          <con:parameter>
-            <con:name/>
-            <con:value xsi:nil="true"/>
-            <con:type>Header</con:type>
-          </con:parameter>
-        </con:parameters>
+        <con:parameters/>
       </con:kafkaPublishStep>
     </con:config>
   </con:testStep>

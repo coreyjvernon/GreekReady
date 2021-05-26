@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/inventory" path="/inventory" id="4e9c975f-9e61-4fff-9cd9-c367c05fba6c" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/inventory" path="/inventory" id="e562a21c-656d-4ead-99c4-d249a3cd8414" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="4e9c975f-9e61-4fff-9cd9-c367c05fba6cfileName">%2Finventory</con:setting>
+    <con:setting id="e562a21c-656d-4ead-99c4-d249a3cd8414fileName">%2Finventory</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="searchInventory" id="51b5104d-f46d-461b-88e1-59eab78914eb" method="GET">
+  <con:method name="searchInventory" id="cf9fff9c-2097-4f07-a66a-299ce805fa12" method="GET">
     <con:description>By passing in the appropriate options, you can search for
 available inventory in the system</con:description>
     <con:settings/>
@@ -32,26 +32,23 @@ available inventory in the system</con:description>
   }
 } ]</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="88ca776b-3e47-4855-ae1f-1c3f8cf1deba" mediaType="application/json">
+    <con:request name="Request 1" id="4a7a448b-35f4-4f46-a503-3afa21add472" mediaType="application/json">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>
-      <con:endpoint>https://virtserver.swaggerhub.com/Corey_Projects/GMQ2/2.0.0</con:endpoint>
+      <con:endpoint>https://virtserver.swaggerhub.com/Corey_Projects/Magic/2.0.0</con:endpoint>
       <con:request/>
-      <con:originalUri>http://18.224.146.21/inventory</con:originalUri>
       <con:credentials>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters>
-        <con:entry key="itemNumber" value="1"/>
-      </con:parameters>
+      <con:parameters/>
       <con:parameterOrder>
         <con:entry>itemNumber</con:entry>
       </con:parameterOrder>
     </con:request>
   </con:method>
-  <con:method name="addInventory" id="c0f8c864-abae-4e80-b031-ec2d9661df19" method="POST">
+  <con:method name="addInventory" id="2e2f1271-2424-41f6-bf89-0f8069184eb8" method="POST">
     <con:description>Adds an item to the system</con:description>
     <con:settings/>
     <con:parameters/>
@@ -69,9 +66,9 @@ available inventory in the system</con:description>
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="af46de92-455b-40e4-be72-2562d9c228a1" mediaType="application/json">
+    <con:request name="Request 1" id="587f9cf3-3036-4b5f-bb2d-7d5659fd6753" mediaType="application/json">
       <con:settings/>
-      <con:endpoint>https://virtserver.swaggerhub.com/Corey_Projects/GMQ2/2.0.0</con:endpoint>
+      <con:endpoint>https://virtserver.swaggerhub.com/Corey_Projects/Magic/2.0.0</con:endpoint>
       <con:request>{\r
   "id" : "d290f1ee-6c54-4b01-90e6-d701748f0851",\r
   "name" : "Widget Adapter",\r
@@ -85,7 +82,7 @@ available inventory in the system</con:description>
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="Deletes an item from the system" id="5fac4cfd-de6b-4d3b-bfcd-d72a3eda2b17" method="DELETE">
+  <con:method name="Deletes an item from the system" id="b4330c81-da46-4a0d-832c-ec5f76412839" method="DELETE">
     <con:settings/>
     <con:parameters>
       <con:parameter>
@@ -95,9 +92,9 @@ available inventory in the system</con:description>
         <con:default/>
       </con:parameter>
     </con:parameters>
-    <con:request name="Request 1" id="8f71f4ba-8b38-4761-989b-f950885be419" mediaType="application/json">
+    <con:request name="Request 1" id="a993a68a-2600-4733-8892-11682bf229d2" mediaType="application/json">
       <con:settings/>
-      <con:endpoint>https://virtserver.swaggerhub.com/Corey_Projects/GMQ2/2.0.0</con:endpoint>
+      <con:endpoint>https://virtserver.swaggerhub.com/Corey_Projects/Magic/2.0.0</con:endpoint>
       <con:request/>
       <con:parameters/>
     </con:request>
